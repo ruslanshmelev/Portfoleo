@@ -1,0 +1,35 @@
+.promo {
+    position: relative;
+    height: 100vh;
+    background: url('../img/IMG-20221031-WA0009.jpg') no-repeat 50%/cover;
+    padding-top: 200px;
+    .title {
+        width: 715px;
+        margin-top: 10px;
+        &__subtitle {
+            position: relative;
+            @include before_circle;
+            padding-left: 10px;
+            z-index: 2;
+        }
+    }
+    
+    &__btns {
+        display: flex;
+        margin-top: 25px;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+        
+        }
+    &__link {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000; 
+        &:hover {
+            color: #cb1515;
+            text-decoration: none;
+        }   
+    }
+
+ }

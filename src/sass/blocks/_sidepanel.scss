@@ -1,0 +1,37 @@
+.sidepanel {
+    position: fixed;
+    top: 203px;
+    height: 340px;
+    width: 24px;
+    left: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    position: fixed;
+    &__divader {
+        display: inline-block;
+        margin-left: 5px;
+        width: 2px;
+        height: 70px;
+        border: 2px solid rgb(0, 0, 0);
+       
+    }
+    &__text {
+        height: 150px;
+        width: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: left;
+        span {
+            display: block;
+            width: 150px;
+            height: 25px;
+            transform: rotate(-90.00deg);
+                       translate: (-45% 200%); 
+        }
+    }
+}
