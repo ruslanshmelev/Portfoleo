@@ -8,8 +8,13 @@
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
+@import 'blocks/hamburger';
+@import 'blocks/menu';
+@import 'blocks/about';
+
 
 * {
+    
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,4 +24,10 @@
     width: 1140px;
     min-height: 5364px;
     margin: 0 auto;
+}
+.divider {
+    width: 60px;
+    height: 0px;
+    border: 3px solid rgb(255, 165, 1);
+    margin-top: 25px;
 }
