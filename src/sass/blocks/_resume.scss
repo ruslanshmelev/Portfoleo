@@ -1,0 +1,118 @@
+.resume {
+    margin-top: 120px;
+    
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .divider {
+        margin: 25px auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,420px);
+        column-gap: 135px;
+        padding: 60px 70px 0 70px;
+    }
+    &__col {
+        &-title {
+            position: relative;
+            padding-left: 35px;
+            &:before {
+                content:'';
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: $main-color; 
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }    
+        }
+        ul {
+            list-style-type: none;
+            
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    top: -14px;
+                    left: 7px;
+                    background-color:black;
+
+                }
+            }
+        }
+    }
+    &__item {
+       
+        &-head {
+            
+            padding: 45px 0 0 100px;
+            position: relative;
+
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+           
+
+        }
+        &-icon {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            @include before_circle;
+            &:before {
+                top: -10px;
+                left: -15px;
+            }
+            &:after {
+                content: '';
+                display: block;
+                width: 39px;
+                height: 1px;
+                background-color:black;
+                top: 9px;
+                left: -53px;
+                position: absolute;
+            }
+            
+           
+        }
+        h4 {
+            margin-bottom: 0;
+        }
+        &-location {
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        &-body {
+            width: 375px;
+            min-height: 78px;
+            margin-top: 12px;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            text-align: left;
+        }    
+            
+        }
+    }
+

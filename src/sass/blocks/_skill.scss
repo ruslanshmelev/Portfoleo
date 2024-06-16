@@ -1,0 +1,25 @@
+.skill {
+    margin-top: 125px;
+    &__title {
+       text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+           left: 50%;
+           transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .divider {
+        margin: 25px auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4,270px);
+        grid-template-rows: repeat(2,270);
+        gap: 13px;
+    }
+
+}

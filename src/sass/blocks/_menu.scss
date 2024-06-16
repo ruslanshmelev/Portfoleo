@@ -1,0 +1,107 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vh;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+        &__overlay {
+            opacity: .65;
+        }
+    }
+
+    &-block {
+        position: relative;
+        width: 345px;
+        height: 100vh;
+        padding-top: 140px;
+        padding-left: 40px;
+        //left: 100%;
+        background-color: $main-color;
+        z-index: 10;
+       transition: all 0.6s;
+    }
+    &__close {
+       position: absolute;
+       top: 25px;
+       right: 25px;
+       cursor: pointer;
+    }
+    &__list {
+        padding-left: 35px;
+        list-style: none;
+        }
+    &__link {
+        position: relative;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgb(0, 0, 0);
+            background: rgba(149, 13, 13, 0);
+            left: -30px;
+            top: 10px;
+        }
+                
+        a {
+            color: rgb(255, 255, 255);
+            &:hover {
+                color: #000;
+                       }
+        }
+        &:hover {
+            &:before {
+                background-color:red;
+            }
+        }
+    } 
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        position: absolute;
+        left: 80px;
+        bottom: 51px;
+        
+        }
+        a {
+            width: 20px;
+            height: 20px;
+            &:hover{
+                svg path {
+                    fill:#b31b1b
+                }
+        }
+        }  
+    &__overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:aliceblue;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.6s;
+        &.active {
+            opacity: .65;
+            z-index: 2;
+        }
+    }         
+}
