@@ -12,3 +12,11 @@ closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
     overlay.classList.remove('active');
 });
+
+
+
+const counters = document.querySelectorAll ('.skill-percent__number'),
+      lines = document.querySelectorAll ('.skill-percent__scale span');
+      counters.forEach((item, i) =>{
+        lines[i].style.width = item.innerHTML;
+      });

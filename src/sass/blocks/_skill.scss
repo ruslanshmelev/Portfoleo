@@ -17,9 +17,82 @@
     }
     &__wrapper {
         display: grid;
+        min-height: 553px;
         grid-template-columns: repeat(4,270px);
-        grid-template-rows: repeat(2,270);
+        grid-template-rows: 270px 270px;
+        margin-top: 60px;
+       
         gap: 13px;
+
     }
+    &__row-item {
+        width: 211px;
+       margin-top: 30px;
+        
+        &-title {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-top: 10px;
+        }
+        &-subtitle {
+            margin-top: 15px;
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+    &-percent {
+        display: grid;
+        grid-template: repeat(2,70px)/repeat(3,350px);
+        gap: 30px 45px;
+        margin-top: 125px;
+        grid-auto-rows: auto;
+        &-items {
+            margin-top: 8px;
+            display: grid;
+            grid-template-columns: 315px 34px;
+            grid-template-rows: 21px 14px;
+            justify-content: space-between;
+            align-content: space-between;
+            .skill-percent__title {
+                position: relative;
+                @include before_circle;
+                &:before {
+                    left: -10px;
+                    top: -5px;
+                }
+            }
+            &__number {
+                color: rgb(0, 0, 0);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                letter-spacing: 0%;
+                text-align: left;
+                
+            }
+            .skill-percent__scale {
+                height: 14px;
+                border-radius: 4px;
+                background: rgb(232, 228, 222);
+                grid-column: 1 / 3;
+                span {
+                    display: block;
+                    height: 100%;
+                    border-radius: 4px;
+                    background-color: $main-color;
+                }
+            }
+
+        }
+    }
+
 
 }
