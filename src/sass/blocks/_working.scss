@@ -1,0 +1,25 @@
+.working {
+    margin-top: 125px;
+    &__title {
+       text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+           left: 50%;
+           transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .divider {
+        margin: 25px auto;
+    }
+    &__wrap {
+        display: grid;
+        grid-template-columns: repeat(4,280px);
+        grid-template-rows: repeat(2,280px);
+        gap: 5px;
+        grid-auto-rows: auto;
+    }
+}
