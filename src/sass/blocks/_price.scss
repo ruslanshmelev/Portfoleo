@@ -1,0 +1,40 @@
+.price {
+    margin-top: 125px;
+    .divider {
+        margin: 30px auto;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template: repeat(3, minmax(44px,auto)) /repeat(2, minmax(373px,auto));
+        justify-content: space-between;
+        gap: 15px;
+        grid-auto-rows: auto;
+    }
+    &__items {
+       position: relative;
+        display: grid;
+        grid-template: repeat(2,auto) / repeat(2,auto);
+        justify-content: space-between;
+        column-gap: 5px;
+        
+        &-title {
+            justify-self: start;
+            position: relative;
+            @include before_circle;
+            &:before {
+                left: -10px;
+                top: -5px;
+            
+                
+        }
+        }
+        &-summa {
+            justify-self: end;
+
+        }
+        &-subtitle {
+            margin-top: 5px;
+            grid-column: 1/3;
+        }
+    }
+}

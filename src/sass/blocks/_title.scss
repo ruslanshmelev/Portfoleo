@@ -2,6 +2,10 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 60px;
+    &_fz12 {
+        font-size: 12px;
+        line-height: 18px;
+    }
     &_fz14 {
         font-size: 14px;
         line-height: 21px;
@@ -21,5 +25,17 @@
     &_fz48 {
         font-size: 48px;
 
+    }
+    &__section-title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+    }
+    &__section-subtitle {
+        text-align: center;
     }
 }

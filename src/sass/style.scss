@@ -4,17 +4,6 @@
 @import 'base/mixins';
 
 
-@import 'blocks/promo';
-@import 'blocks/title';
-@import 'blocks/button';
-@import 'blocks/sidepanel';
-@import 'blocks/hamburger';
-@import 'blocks/menu';
-@import 'blocks/about';
-@import 'blocks/resume';
-@import 'blocks/skill';
-@import 'blocks/working';
-
 
 * {
     
@@ -33,3 +22,17 @@
     border: 3px solid rgb(255, 165, 1);
     margin-top: 25px;
 }
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/sidepanel';
+@import 'blocks/hamburger';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skill';
+@import 'blocks/working';
+@import 'blocks/price';
+@import 'blocks/contacts';
+
+
