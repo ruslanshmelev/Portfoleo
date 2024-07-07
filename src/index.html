@@ -9,23 +9,21 @@
     <meta name="description" content="Здесь вы сможете ознакомиться с моими работами и узнать больше обо мне">
 
     <!-- Primary Meta Tags -->
-<title>WEB-разработка</title>
-<meta name="title" content="WEB-разработка" />
-<meta name="description" content="Разрабатываем и ведем сайты" />
+
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://metatags.io/" />
-<meta property="og:title" content="WEB-разработка" />
-<meta property="og:description" content="Разрабатываем и ведем сайты" />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://metatags.io/" >
+<meta property="og:title" content="WEB-разработка" >
+<meta property="og:description" content="Разрабатываем и ведем сайты" >
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" >
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://metatags.io/" />
-<meta property="twitter:title" content="WEB-разработка" />
-<meta property="twitter:description" content="Разрабатываем и ведем сайты" />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://metatags.io/" >
+<meta property="twitter:title" content="WEB-разработка" >
+<meta property="twitter:description" content="Разрабатываем и ведем сайты" >
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" >
 
 
 
@@ -50,6 +48,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -72,9 +71,11 @@
         <div class="sidepanel__text"><span>Социальные сети</span></div>
     </aside>
     <div class="hamburger">
+       
         <span></span>
         <span></span>
         <span></span>
+    
     </div>
     <div class="menu">
         <div class="menu-block">
@@ -118,13 +119,13 @@
         </div>  
         </div>  
         </div>
-        <div class="menu__overlay"></div>
-    </div>
+        <div class="menu__overlppay"></div>
     
-<section class="promo">
+    
+    <section class="promo">
         <div class="container">
             <div class="title title_fz16 title__subtitle">Меня зовут Руслан</div>
-            <h1 class="title title_fz48 promo__title">Я начинающий web-разработчик
+            <h1 class="title title_fz48 promo__title animate__fadeInUpBig">Я начинающий web-разработчик
              из Абрау-Дюрсо</h1>
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Портфолио</a>
@@ -136,7 +137,17 @@
 <section class="about">
     <div class="container">
         <div class="about__wrapper">
-            <img src="../src/img/IMG-20230720-WA0009.png" alt="photo" class="about__photo">
+            <!--<img srcset="img/IMG-20230720-WA0009-min.png 300w,
+                         img/IMG-20230720-WA0009.png 400w"
+                 sizes="(max-width:576px) 280px,
+                        (min-width:577px) 400"        
+            src="img/IMG-20230720-WA0009.png" alt="photo" class="about__photo">--> 
+            
+            <picture class="about__photo">
+                <source media="(max-width:576px)" srcset="img/IMG-20230720-WA0009-min.png">
+                <source media="(min-width:577px)" srcset="IMG-20230720-WA0009.png">
+                <img src="img/IMG-20230720-WA0009.png" alt="photo">
+            </picture>
             <div class="about__descr">
                 <h2 class="title title_fz16 about__title">Про меня</h2>
                 <div class="title title_fz36 about__subtitle">МЕНЯ зовут Руслан</div>
@@ -263,18 +274,7 @@
           </ul>
         </div>
     </div>
-    <div class="skill__percent">
-        <div class="skill__percent-item">
-
-        </div>
-        <div class="skill__percent-item">
-           <h4 class="title title_fz14 ">Создание сайтов</h4>
-        </div>
-        <div class="skill__percent-item"></div>
-        <div class="skill__percent-item"></div>
-        <div class="skill__percent-item"></div>
-        <div class="skill__percent-item"></div>
-    </div>
+    
 </div> 
 </section>
 <section class="skill">
@@ -473,8 +473,11 @@
         </form>
       </div>  
     </div>
+</div>
 </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

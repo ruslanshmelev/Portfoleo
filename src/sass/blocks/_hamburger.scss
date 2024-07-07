@@ -1,24 +1,21 @@
 .hamburger {
-    display: flex;
     position: absolute;
-    width: 36px;
-    height: 22px;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-left: 1800px;
+    align-items: flex-end;
     z-index: 3;
-    position: fixed;
-    align-items:end;
     cursor: pointer;
     span {
         width: 30px;
         height: 3px;
         background: rgb(21, 24, 18);
-        
         &:nth-child(2) {
             width: 36px;
-        }
-
+        
+    }
     }
 }
